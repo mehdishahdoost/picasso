@@ -1,4 +1,4 @@
-export type ShapeKind = 'rect' | 'ellipse' | 'text' | 'database' | 'frame' | 'arrow' | 'image' | 'button' | 'textInput' | 'textArea' | 'checkbox' | 'radio' | 'combobox' | 'toggle' | 'slider' | 'link' | 'card' | 'navbar' | 'modal' | 'table' | 'form'
+export type ShapeKind = 'rect' | 'ellipse' | 'triangle' | 'diamond' | 'hexagon' | 'parallelogram' | 'text' | 'database' | 'frame' | 'arrow' | 'image' | 'button' | 'textInput' | 'textArea' | 'checkbox' | 'radio' | 'combobox' | 'toggle' | 'slider' | 'link' | 'card' | 'navbar' | 'modal' | 'table' | 'form'
 export type Port = 'top'|'right'|'bottom'|'left'
 export type WebOption = { label: string; value: string }
 export type WebRow = { cells: string[] }
