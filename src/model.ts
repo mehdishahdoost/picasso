@@ -1,6 +1,6 @@
-export type ShapeKind = 'rect' | 'ellipse' | 'text' | 'database' | 'frame' | 'arrow'
+export type ShapeKind = 'rect' | 'ellipse' | 'text' | 'database' | 'frame' | 'arrow' | 'image'
 export type Port = 'top'|'right'|'bottom'|'left'
-export type PicasoShape = { id: string; kind: ShapeKind; x: number; y: number; width: number; height: number; rotation?: number; text?: string; fill?: string; stroke?: string; from?: string; to?: string; fromPort?: Port; toPort?: Port }
+export type PicasoShape = { id: string; kind: ShapeKind; x: number; y: number; width: number; height: number; rotation?: number; text?: string; imageData?: string; fill?: string; stroke?: string; from?: string; to?: string; fromPort?: Port; toPort?: Port }
 export const portPoint = (shape: PicasoShape, port: Port) => { const point = port === 'top' ? { x: shape.x+shape.width/2, y: shape.y } : port === 'right' ? { x: shape.x+shape.width, y: shape.y+shape.height/2 } : port === 'bottom' ? { x: shape.x+shape.width/2, y: shape.y+shape.height } : { x: shape.x, y: shape.y+shape.height/2 }; const radians=(shape.rotation ?? 0)*Math.PI/180, cx=shape.x+shape.width/2, cy=shape.y+shape.height/2; return { x: cx+(point.x-cx)*Math.cos(radians)-(point.y-cy)*Math.sin(radians), y: cy+(point.x-cx)*Math.sin(radians)+(point.y-cy)*Math.cos(radians) } }
 export type PicasoPage = { id: string; name: string; shapes: PicasoShape[] }
 export type PicasoDocument = { schemaVersion: 1; documentId: string; pages: PicasoPage[] }
