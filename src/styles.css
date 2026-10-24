@@ -8,3 +8,5 @@
 .connection-preview{stroke:#2563eb;stroke-width:2;stroke-dasharray:6 5;pointer-events:none;fill:none}
 .connector-label{font-size:12px;fill:#334155;pointer-events:none}
 .selection-marquee{fill:#2563eb18;stroke:#2563eb;stroke-width:1.5;stroke-dasharray:6 4;pointer-events:none}
+.rotate-handle{fill:#16a34a;stroke:#fff;stroke-width:2;cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%230f172a' stroke-width='2' d='M20 11a8 8 0 1 0-2.3 5.7M20 5v6h-6'/%3E%3C/svg%3E") 12 12,grab}
+.connector{fill:none}
