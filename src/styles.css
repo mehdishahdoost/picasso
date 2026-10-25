@@ -16,3 +16,4 @@
 .minimap{position:fixed;right:240px;bottom:52px;width:190px!important;height:120px!important;background:#fff;border:1px solid #94a3b8;border-radius:6px;box-shadow:0 5px 18px #0f172a26;z-index:10;cursor:grab;pointer-events:auto}.minimap:active{cursor:grabbing}.minimap-viewport{fill:#2563eb22;stroke:#2563eb;stroke-width:1.5;pointer-events:none}
 main{position:relative}
 .color-input{height:34px;padding:3px;cursor:pointer}
+.connect-handle,.connection-preview{display:none!important}
